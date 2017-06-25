@@ -284,7 +284,7 @@ impl Config {
                 // studio build system but instead use makefiles that MinGW can
                 // use to build.
                 if self.generator.is_none() {
-                    cmd.arg("-G").arg("MSYS Makefiles");
+                    cmd.arg("-G").arg("MinGW Makefiles");
                 }
             } else {
                 // If we're cross compiling onto windows, then set some
